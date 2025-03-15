@@ -25,18 +25,18 @@
 - Für Projekte, die kommerzielle Aktivitäten oder Gewinne beinhalten, kontaktieren Sie bitte den Autor, bevor Sie [LinguaGacha](https://github.com/neavo/LinguaGacha) verwenden!
 
 ## Hauptmerkmale 📌
-- Blitzschnelle Übersetzungsgeschwindigkeit: 10 Sekunden für Untertitel, 1 Minute für Romane, 5 Minuten für Spiele
+- Blitzschnelle Übersetzungsgeschwindigkeit: 10 Sekunden für Untertitel, 1 Minute für einen Roman, 5 Minuten für ein Spiel
 - Automatische Glossarerstellung, die konsistente Terminologie (z.B. Charakternamen) im gesamten Werk sicherstellt `👈👈 Exklusives Feature`
 - Optimale Übersetzungsqualität von Top-Modellen (z.B. DeepSeek-R1) bis hin zu lokalen kleinen Modellen (z.B. Qwen2.5-7B)
 - `100%` genaue Beibehaltung der Textformatierung und eingebetteter Codes, was die Nachbearbeitungsarbeit erheblich reduziert - ideal für eingebettete Lokalisierung `👈👈 Exklusives Feature`
 
 ## Systemanforderungen 🖥️
 - Kompatibel mit KI-Modell-Schnittstellen, die den Standards `OpenAI`, `Google`, `Anthropic`, `SakuraLLM` folgen
-- Kompatibel mit [KeywordGacha](https://github.com/neavo/KeywordGacha) `👈👈 Next-Generation-Tool für KI-gestützte Glossarerstellung`
+- Kompatibel mit [KeywordGacha](https://github.com/neavo/KeywordGacha) `👈👈 Ein Next-Generation-Tool, das mit KI-Fähigkeiten ein Glossar mit einem Klick generiert`
 
 ## Grundlegender Arbeitsablauf 🛸
 - Laden Sie die Anwendung von der [Releases-Seite](https://github.com/neavo/LinguaGacha/releases) herunter
-- Beschaffen Sie eine zuverlässige KI-Modell-Schnittstelle (wählen Sie eine aus):
+- Besorgen Sie sich eine zuverlässige KI-Modell-Schnittstelle, es wird empfohlen eine der folgenden zu wählen: (wählen Sie eine aus):
   - [ [Lokale API](https://github.com/neavo/OneClickLLAMA) ] (Kostenlos, erfordert ≥8GB VRAM GPU, Nvidia empfohlen)
   - [ [DeepSeek API](https://github.com/neavo/LinguaGacha/wiki/DeepSeek) ] (Bezahlung, kostengünstig, schnell, hochwertig, keine GPU erforderlich) `👈👈 Empfohlen`
   - [ [Google Gemini API](https://aistudio.google.com/) ] (Bezahlung, kostengünstig, schnell, relativ hochwertig, keine GPU erforderlich) `👈👈 Empfohlen`
