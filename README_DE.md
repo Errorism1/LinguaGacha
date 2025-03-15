@@ -97,9 +97,9 @@
     - Bietet mehr semantische Informationen, während Übersetzungsfehler wie Textfehlausrichtung vermieden werden
 
 ## FAQ 📥
-- Beziehung zwischen [LinguaGacha](https://github.com/neavo/LinguaGacha) und [AiNiee](https://github.com/NEKOparapa/AiNiee)
-  - `LinguaGacha` ist eine vollständige Überarbeitung unter Einbeziehung der Lehren aus `AiNiee`
-  - Der Entwickler von `LinguaGacha` war ein Hauptmitwirkender an `AiNiee v5`
+- Die Beziehung zwischen [LinguaGacha](https://github.com/neavo/LinguaGacha) und [AiNiee](https://github.com/NEKOparapa/AiNiee)
+  - `LinguaGacha` ist eine brandneue Übersetzeranwendung, die auf den Erfahrungen von `AiNiee` basiert
+  - Der Autor von `LinguaGacha` ist auch einer der Hauptentwickler und -betreuer von `AiNiee v5`
 
 ## Unterstützung 😥
 - Laufzeitprotokolle werden im `log`-Ordner gespeichert
