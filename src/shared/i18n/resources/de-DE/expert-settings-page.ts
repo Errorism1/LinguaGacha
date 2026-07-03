@@ -2,7 +2,7 @@ import { zh_cn_expert_settings_page } from "../zh-CN/expert-settings-page";
 import type { LocaleMessageSchema } from "../../types";
 
 export const de_de_expert_settings_page = {
-  title: "Experteneinstellungen",
+  title: "Erweitert",
   fields: {
     preceding_lines_threshold: {
       title: "Schwellenwert für vorhergehende Zeilen",

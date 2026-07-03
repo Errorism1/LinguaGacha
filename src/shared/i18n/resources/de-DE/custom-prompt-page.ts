@@ -2,7 +2,7 @@ import { zh_cn_custom_prompt_page } from "../zh-CN/custom-prompt-page";
 import type { LocaleMessageSchema } from "../../types";
 
 export const de_de_custom_prompt_page = {
-  title: "Benutzerdefinierte Prompts",
+  title: "Eigene Prompts",
   action: {
     import: "Importieren",
     export: "Exportieren",
