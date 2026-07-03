@@ -107,12 +107,15 @@ const ROUTE_IDS_DISABLED_WHEN_PROJECT_UNLOADED: ReadonlySet<RouteId> = new Set([
 /**
  * 解析当前场景的最终消费值。
  */
-function resolve_toggled_app_language(app_language: "ZH" | "EN"): "ZH" | "EN" {
+function resolve_toggled_app_language(app_language: "ZH" | "EN" | "DE"): "ZH" | "EN" | "DE" {
+  if (app_language === "ZH") {
+    return "EN";
+  }
   if (app_language === "EN") {
-    return "ZH";
+    return "DE";
   }
 
-  return "EN";
+  return "ZH";
 }
 
 /**
@@ -975,10 +978,13 @@ function AppContent(props: AppContentProps): JSX.Element {
 /**
  * 归一化输入，保证下游消费稳定形状。
  */
-function normalize_log_window_app_language(value: unknown): "ZH" | "EN" {
+function normalize_log_window_app_language(value: unknown): "ZH" | "EN" | "DE" {
   const normalized_value = String(value ?? "")
     .trim()
     .toUpperCase();
+  if (normalized_value === "DE" || normalized_value.startsWith("DE-")) {
+    return "DE";
+  }
   if (normalized_value === "EN" || normalized_value.startsWith("EN-")) {
     return "EN";
   }
@@ -990,7 +996,7 @@ function normalize_log_window_app_language(value: unknown): "ZH" | "EN" {
 /**
  * 读取当前场景需要的稳定数据。
  */
-function read_initial_log_window_app_language(): "ZH" | "EN" {
+function read_initial_log_window_app_language(): "ZH" | "EN" | "DE" {
   const stored_language = window.localStorage.getItem(LOG_WINDOW_APP_LANGUAGE_STORAGE_KEY);
   return normalize_log_window_app_language(stored_language ?? window.navigator.language);
 }
@@ -1050,7 +1056,7 @@ function MainWindowApp(props: AppContentProps): JSX.Element {
  * 渲染当前组件的公开界面。
  */
 function LogWindowApp(): JSX.Element {
-  const [app_language, set_app_language] = useState<"ZH" | "EN">(() =>
+  const [app_language, set_app_language] = useState<"ZH" | "EN" | "DE">(() =>
     read_initial_log_window_app_language(),
   );
 

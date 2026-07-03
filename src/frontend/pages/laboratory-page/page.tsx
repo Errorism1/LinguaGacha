@@ -15,7 +15,10 @@ const HELP_URL_BY_FIELD = {
   "en-US": {
     mtool_optimizer_enable: "https://github.com/neavo/LinguaGacha/wiki/MToolOptimizerEN",
   },
-} as const satisfies Record<"zh-CN" | "en-US", Record<LaboratoryHelpField, string>>;
+  "de-DE": {
+    mtool_optimizer_enable: "https://github.com/neavo/LinguaGacha/wiki/MToolOptimizerEN",
+  },
+} as const satisfies Record<"zh-CN" | "en-US" | "de-DE", Record<LaboratoryHelpField, string>>;
 
 const HELP_LABEL_KEY_BY_FIELD: Record<LaboratoryHelpField, LocaleKey> = {
   mtool_optimizer_enable: "laboratory_page.fields.mtool_optimizer_enable.help_label",

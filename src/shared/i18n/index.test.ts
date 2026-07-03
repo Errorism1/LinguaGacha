@@ -32,6 +32,16 @@ describe("shared i18n", () => {
     );
   });
 
+  it("DE 语言解析为 de-DE 并正确翻译", () => {
+    const de_t = create_text_resolver(resolve_i18n_locale("DE"));
+
+    expect(de_t("app.log.api_gateway_started", { BASE_URL: "http://127.0.0.1:65425" })).toBe(
+      "API Gateway gestartet - http://127.0.0.1:65425",
+    );
+    expect(de_t("app.action.cancel")).toBe("Abbrechen");
+    expect(de_t("app.navigation_action.language")).toBe("Sprache");
+  });
+
   it("未知 app_language 回退中文界面", () => {
     const t = create_text_resolver(resolve_i18n_locale("bad"));
 

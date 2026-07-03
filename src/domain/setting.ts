@@ -27,12 +27,12 @@ export {
 /**
  * 集中维护当前模块的稳定常量。
  */
-export const APP_LANGUAGES = ["ZH", "EN"] as const; // AppLanguage 是设置文件、运行态 settings 和 i18n locale 计算的唯一语言值域
+export const APP_LANGUAGES = ["ZH", "EN", "DE"] as const; // AppLanguage 是设置文件、运行态 settings 和 i18n locale 计算的唯一语言值域
 
 /**
  * 集中维护当前模块的稳定常量。
  */
-export const APP_LOCALES = ["zh-CN", "en-US"] as const; // AppLocale 只服务渲染进程国际化，不替代设置快照中的应用语言
+export const APP_LOCALES = ["zh-CN", "en-US", "de-DE"] as const; // AppLocale 只服务渲染进程国际化，不替代设置快照中的应用语言
 
 /**
  * 集中维护当前模块的稳定常量。
@@ -300,7 +300,9 @@ export class Setting {
    * i18n locale 是 app_language 的计算结果，不单独持久化为第二状态源
    */
   public static resolve_app_locale(app_language: AppLanguage): AppLocale {
-    return app_language === "EN" ? "en-US" : "zh-CN";
+    if (app_language === "EN") return "en-US";
+    if (app_language === "DE") return "de-DE";
+    return "zh-CN";
   }
 
   /**

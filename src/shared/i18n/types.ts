@@ -1,4 +1,4 @@
-export type Locale = "zh-CN" | "en-US";
+export type Locale = "zh-CN" | "en-US" | "de-DE";
 
 export type LocaleMessageSchema<tree> = {
   [key in keyof tree]: tree[key] extends string

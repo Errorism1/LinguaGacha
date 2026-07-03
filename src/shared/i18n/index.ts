@@ -1,4 +1,4 @@
-import { en_us_messages, zh_cn_messages } from "./messages";
+import { de_de_messages, en_us_messages, zh_cn_messages } from "./messages";
 import type { Locale, LocaleMessageSchema } from "./types";
 
 type JoinPath<prefix extends string, key extends string> = prefix extends ""
@@ -52,12 +52,16 @@ function interpolate_message(template: string, params: Record<string, string>): 
 }
 
 export function resolve_i18n_locale(app_language: unknown): Locale {
-  return String(app_language).trim().toUpperCase() === "EN" ? "en-US" : "zh-CN";
+  const upper = String(app_language).trim().toUpperCase();
+  if (upper === "EN") return "en-US";
+  if (upper === "DE") return "de-DE";
+  return "zh-CN";
 }
 
 export const MESSAGE_MAP_BY_LOCALE: Readonly<Record<Locale, ReadonlyMap<LocaleKey, string>>> = {
   "zh-CN": build_message_map(zh_cn_messages),
   "en-US": build_message_map(en_us_messages),
+  "de-DE": build_message_map(de_de_messages),
 };
 
 export function format_i18n_message(
