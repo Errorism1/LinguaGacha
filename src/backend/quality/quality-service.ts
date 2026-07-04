@@ -250,7 +250,7 @@ export class QualityService {
     const task_type = Prompt.from_json(request["task_type"]).kind;
     const config = normalize_setting_snapshot(this.app_setting_service.read_setting());
     const language = config.app_language.toLowerCase();
-    const prompt_language: TranslationPromptLanguage = language === "en" ? "en" : "zh";
+    const prompt_language: TranslationPromptLanguage = language === "en" || language === "de" ? "en" : "zh";
     const template_dir = this.paths.get_prompt_template_dir(task_type, prompt_language);
     const fill_template_section = (text: string): string => {
       if (task_type !== "translation") {
