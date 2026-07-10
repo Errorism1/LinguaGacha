@@ -49,8 +49,7 @@ export const de_de_app = {
       "{COUNT} doppelte Regeln wurden erkannt. Wählen Sie, wie damit umgegangen werden soll …?",
   },
   update: {
-    confirm_description:
-      "LinguaGacha v{VERSION} ist verfügbar. Update herunterladen …?",
+    confirm_description: "LinguaGacha v{VERSION} ist verfügbar. Update herunterladen …?",
     restart_confirm: "Neustarten und aktualisieren",
     launching: "Wird verarbeitet …",
   },
@@ -93,6 +92,12 @@ export const de_de_app = {
       "Glossar <Originalbegriff> -> <Übersetzter Begriff> #<Begriffsinformation>:",
     builder_input: "Eingabe:",
     builder_preceding_context: "Vorhergehender Kontext:",
+  },
+  translation_export: {
+    directory: {
+      translated: "Übersetzung",
+      bilingual: "Übersetzung_Zweisprachig",
+    },
   },
   native_file_filter: {
     project: "LinguaGacha-Projekt",
@@ -164,8 +169,7 @@ export const de_de_app = {
     },
     task: {
       busy: {
-        message:
-          "Eine Hintergrundaufgabe wird ausgeführt. Bitte versuchen Sie es später erneut …",
+        message: "Eine Hintergrundaufgabe wird ausgeführt. Bitte versuchen Sie es später erneut …",
         action:
           "Warten Sie, bis die aktuelle Aufgabe abgeschlossen ist, oder stoppen Sie sie zuerst …",
       },
@@ -178,8 +182,7 @@ export const de_de_app = {
       provider_failed: {
         message:
           "Die Modellservice-Anfrage ist fehlgeschlagen. Bitte überprüfen Sie die API-Einstellungen …",
-        action:
-          "Überprüfen Sie die Modell-URL, den API-Schlüssel und den Anbieterstatus …",
+        action: "Überprüfen Sie die Modell-URL, den API-Schlüssel und den Anbieterstatus …",
       },
     },
     worker: {
@@ -192,8 +195,7 @@ export const de_de_app = {
     },
     runtime: {
       capability_missing: {
-        message:
-          "Der aktuellen Laufzeitumgebung fehlt eine erforderliche Fähigkeit …",
+        message: "Der aktuellen Laufzeitumgebung fehlt eine erforderliche Fähigkeit …",
       },
       disposed: {
         message: "Die Laufzeitressource wurde freigegeben …",
@@ -255,45 +257,35 @@ export const de_de_app = {
   },
   diagnostic: {
     api_gateway: {
-      direct_route_failed:
-        "API Gateway-Direkt-Routing fehlgeschlagen …",
+      direct_route_failed: "API Gateway-Direkt-Routing fehlgeschlagen …",
     },
     default_preset: {
       config_normalize_failed:
         "Fehler beim Normalisieren der Standard-Voreinstellungskonfiguration: {CONFIG_PATH} …",
-      prompt_load_failed:
-        "Fehler beim Laden der Standard-Prompt-Voreinstellung …",
-      quality_rule_load_failed:
-        "Fehler beim Laden der Standard-Qualitätsregel-Voreinstellung …",
+      prompt_load_failed: "Fehler beim Laden der Standard-Prompt-Voreinstellung …",
+      quality_rule_load_failed: "Fehler beim Laden der Standard-Qualitätsregel-Voreinstellung …",
       value_normalize_failed:
         "Fehler beim Normalisieren des Standard-Voreinstellungswerts: {PRESET_DIRECTORY} -> {VALUE} …",
     },
     file_export: {
-      open_output_folder_failed:
-        "Fehler beim Öffnen des Ausgabeordners …",
-      translation_failed:
-        "Fehler beim Erstellen der Übersetzungsdateien …",
+      open_output_folder_failed: "Fehler beim Öffnen des Ausgabeordners …",
+      translation_failed: "Fehler beim Erstellen der Übersetzungsdateien …",
       write_file_failed: "Dateischreiben fehlgeschlagen …",
     },
     lifecycle: {
       app_start_failed: "LinguaGacha konnte nicht gestartet werden …",
-      backend_gateway_start_failed:
-        "Backend-/Gateway-Start fehlgeschlagen …",
+      backend_gateway_start_failed: "Backend-/Gateway-Start fehlgeschlagen …",
       main_fatal_uncaught:
         "Electron-Hauptprozess hat eine unbehandelte schwerwiegende Ausnahme abgefangen …",
     },
     migration: {
-      path_failed:
-        "Fehler beim Migrieren des Pfads: {SOURCE_PATH} -> {DESTINATION_PATH} …",
+      path_failed: "Fehler beim Migrieren des Pfads: {SOURCE_PATH} -> {DESTINATION_PATH} …",
     },
     renderer: {
-      main_frame_load_failed:
-        "Renderer-Hauptframe konnte nicht geladen werden …",
+      main_frame_load_failed: "Renderer-Hauptframe konnte nicht geladen werden …",
       process_exited: "Renderer-Prozess beendet …",
-      reported_error:
-        "Renderer hat einen Frontend-Zustandsfehler erfasst …",
-      subframe_load_failed:
-        "Renderer-Unterframe konnte nicht geladen werden …",
+      reported_error: "Renderer hat einen Frontend-Zustandsfehler erfasst …",
+      subframe_load_failed: "Renderer-Unterframe konnte nicht geladen werden …",
       window_unresponsive: "Fenster reagiert nicht mehr …",
     },
   },
@@ -310,13 +302,10 @@ export const de_de_app = {
     api_test_result_failure: "Fehlgeschlagene Schlüssel:",
     api_test_response_result: "Modellantwort:",
     api_test_timeout: "Anfrage-Zeitüberschreitung ({SECONDS}s)",
-    api_test_token_info:
-      "Aufgabenzeit {TIME} Sekunden, Eingabe-Token {PT}, Ausgabe-Token {CT}",
+    api_test_token_info: "Aufgabenzeit {TIME} Sekunden, Eingabe-Token {PT}, Ausgabe-Token {CT}",
     app_version: "LinguaGacha v{VERSION} …",
-    system_proxy_startup_detected:
-      "System-Proxy-Einstellung erkannt - {PROXY}",
-    default_preset_loaded:
-      "Standard-Voreinstellungen automatisch geladen: {NAMES} …",
+    system_proxy_startup_detected: "System-Proxy-Einstellung erkannt - {PROXY}",
+    default_preset_loaded: "Standard-Voreinstellungen automatisch geladen: {NAMES} …",
     engine_api_model: "API-Modell",
     engine_api_name: "API-Name",
     engine_api_url: "API-URL",
@@ -329,22 +318,18 @@ export const de_de_app = {
     engine_task_stop: "Aufgabe gestoppt …",
     engine_task_success:
       "Aufgabenzeit {TIME} Sekunden, {LINES} Textzeilen, Eingabe-Token {PT}, Ausgabe-Token {CT}",
-    generate_translation_done:
-      "Übersetzungsdateien gespeichert unter {PATH} …",
-    generate_translation_start:
-      "Übersetzungsdateien werden erstellt …",
+    generate_translation_done: "Übersetzungsdateien gespeichert unter {PATH} …",
+    generate_translation_start: "Übersetzungsdateien werden erstellt …",
     response_checker_fail_data: "Datenstrukturfehler",
     response_checker_fail_degradation: "Verschlechterung aufgetreten",
     response_checker_fail_line_count: "Zeilenanzahl stimmt nicht überein",
     response_checker_fail_request: "Modellanfrage fehlgeschlagen",
-    request_failed_retry:
-      "Modellanfrage fehlgeschlagen, wird automatisch wiederholt …",
+    request_failed_retry: "Modellanfrage fehlgeschlagen, wird automatisch wiederholt …",
     response_checker_fail_timeout: "Netzwerkanfrage-Zeitüberschreitung",
     response_checker_line_error_empty_line: "Leere Zeile",
     system_closed_dropped:
       "Protokollsystem ist heruntergefahren; neues Protokoll wird verworfen: {MESSAGE}",
-    translation_response_check_fail:
-      "Datenfehler, wird automatisch wiederholt, Grund: {REASON}",
+    translation_response_check_fail: "Datenfehler, wird automatisch wiederholt, Grund: {REASON}",
     translation_response_check_fail_all:
       "Alle übersetzten Textqualitätsprüfungen fehlgeschlagen, wird automatisch aufgeteilt und wiederholt, Grund: {REASON}",
     translation_response_check_fail_part:

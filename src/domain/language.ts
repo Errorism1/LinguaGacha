@@ -191,17 +191,6 @@ export function get_language_label_key(language_code: LanguageCode): LanguageLab
   return `app.language.${language_code}`;
 }
 
-// 应用语言只影响语言显示名本地化，未知值默认回中文
-/**
- * 读取当前场景需要的稳定数据。
- */
-export function get_language_display_locale(app_language: unknown): LanguageDisplayLocale {
-  const upper = String(app_language).trim().toUpperCase();
-  if (upper === "EN") return "en";
-  if (upper === "DE") return "de";
-  return "zh";
-}
-
 // 展示名统一从语言定义表读取，不在调用点重复维护语言名称
 /**
  * 读取当前场景需要的稳定数据。

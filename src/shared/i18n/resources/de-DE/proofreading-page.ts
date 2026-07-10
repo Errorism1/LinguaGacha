@@ -95,8 +95,7 @@ export const de_de_proofreading_page = {
   },
   confirm: {
     retranslate_description: "{COUNT} Einträge wirklich neu übersetzen …?",
-    clear_translation_description:
-      "Übersetzungen für {COUNT} Einträge wirklich löschen …?",
+    clear_translation_description: "Übersetzungen für {COUNT} Einträge wirklich löschen …?",
   },
   feedback: {
     loading_toast: "Daten werden geladen …",

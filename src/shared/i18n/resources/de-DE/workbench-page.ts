@@ -40,8 +40,7 @@ export const de_de_workbench_page = {
     refresh_failed: "Fehler beim Aktualisieren der Werkbank.",
     add_file_loading_toast: "Datei wird hinzugefügt und Cache aktualisiert …",
     no_valid_file: "Keine gültigen Dateien können hinzugefügt werden.",
-    file_action_failed:
-      "Dateioperation fehlgeschlagen. Bitte versuchen Sie es später erneut.",
+    file_action_failed: "Dateioperation fehlgeschlagen. Bitte versuchen Sie es später erneut.",
     generate_translation_failed:
       "Fehler beim Erstellen verfügbarer Übersetzungsdateien. Bitte versuchen Sie es später erneut.",
     close_project_failed:
@@ -92,12 +91,9 @@ export const de_de_workbench_page = {
       candidate_count: "Kandidatenbegriffe",
     },
     confirm: {
-      reset_all_description:
-        "Analysefortschritt für das gesamte Projekt wirklich zurücksetzen …?",
-      reset_failed_description:
-        "Fehlgeschlagenen Analysefortschritt wirklich zurücksetzen …?",
-      import_glossary_description:
-        "Kandidatenbegriffe wirklich ins Glossar importieren …?",
+      reset_all_description: "Analysefortschritt für das gesamte Projekt wirklich zurücksetzen …?",
+      reset_failed_description: "Fehlgeschlagenen Analysefortschritt wirklich zurücksetzen …?",
+      import_glossary_description: "Kandidatenbegriffe wirklich ins Glossar importieren …?",
       stop_description: "Aktuelle Analyseaufgabe wirklich stoppen …?",
     },
     feedback: {
@@ -107,8 +103,7 @@ export const de_de_workbench_page = {
       done: "Abgeschlossen …",
       stopped: "Gestoppt …",
       reset_all_failed: "Fehler beim Zurücksetzen des gesamten Analysefortschritts",
-      reset_failed_failed:
-        "Fehler beim Zurücksetzen des fehlgeschlagenen Analysefortschritts",
+      reset_failed_failed: "Fehler beim Zurücksetzen des fehlgeschlagenen Analysefortschritts",
       import_loading_toast:
         "Kandidatenbegriffe werden importiert und Korrektur-Cache aktualisiert …",
       import_failed: "Fehler beim Importieren der Kandidatenbegriffe",
@@ -141,10 +136,8 @@ export const de_de_workbench_page = {
     confirm: {
       reset_all_description:
         "Übersetzungsfortschritt für das gesamte Projekt wirklich zurücksetzen …?",
-      reset_failed_description:
-        "Fehlgeschlagene Übersetzungseinträge wirklich zurücksetzen …?",
-      generate_description:
-        "Derzeit verfügbare Übersetzungsdateien wirklich erstellen …?",
+      reset_failed_description: "Fehlgeschlagene Übersetzungseinträge wirklich zurücksetzen …?",
+      generate_description: "Derzeit verfügbare Übersetzungsdateien wirklich erstellen …?",
       stop_description: "Aktuelle Übersetzungsaufgabe wirklich stoppen …?",
     },
     feedback: {
@@ -154,18 +147,15 @@ export const de_de_workbench_page = {
       done: "Abgeschlossen …",
       stopped: "Gestoppt …",
       reset_all_failed: "Fehler beim Zurücksetzen des gesamten Übersetzungsfortschritts.",
-      reset_failed_failed:
-        "Fehler beim Zurücksetzen der fehlgeschlagenen Übersetzungseinträge.",
-      generate_failed:
-        "Fehler beim Erstellen verfügbarer Übersetzungsdateien.",
+      reset_failed_failed: "Fehler beim Zurücksetzen der fehlgeschlagenen Übersetzungseinträge.",
+      generate_failed: "Fehler beim Erstellen verfügbarer Übersetzungsdateien.",
     },
   },
   command: {
     description: "Die Werkbank-Befehlsleiste enthält Schnellaktionen auf Projektebene.",
   },
   reorder: {
-    failed:
-      "Fehler beim Speichern der Dateireihenfolge. Bitte versuchen Sie es später erneut.",
+    failed: "Fehler beim Speichern der Dateireihenfolge. Bitte versuchen Sie es später erneut.",
   },
   dialog: {
     import_conflict: {
@@ -179,16 +169,14 @@ export const de_de_workbench_page = {
       cancel: "Nicht füllen",
     },
     reset: {
-      description:
-        "Übersetzungsstatus dieser Datei wirklich zurücksetzen …?",
+      description: "Übersetzungsstatus dieser Datei wirklich zurücksetzen …?",
     },
     delete: {
       description:
         "Ausgewählte Datei und alle zugehörigen Übersetzungseinträge wirklich löschen …?",
     },
     generate_translation: {
-      description:
-        "Derzeit verfügbare Übersetzungsdateien wirklich erstellen …?",
+      description: "Derzeit verfügbare Übersetzungsdateien wirklich erstellen …?",
     },
     close_project: {
       description: "Aktuelles Projekt wirklich schließen …?",

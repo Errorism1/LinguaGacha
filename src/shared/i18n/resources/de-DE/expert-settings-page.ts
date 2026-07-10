@@ -27,7 +27,8 @@ export const de_de_expert_settings_page = {
         '• [ruby text=かんじ] [ruby text = かんじ] [ruby text="かんじ"] [ruby text = "かんじ"]',
     },
     deduplication_in_bilingual: {
-      title: "Nur einmal ausgeben, wenn Quelle und Ziel in zweisprachigen Ausgabedateien identisch sind",
+      title:
+        "Nur einmal ausgeben, wenn Quelle und Ziel in zweisprachigen Ausgabedateien identisch sind",
       description:
         "In Untertiteln oder E-Books, ob Text nur einmal ausgegeben werden soll, wenn Quell- und Zieltext identisch sind, standardmäßig aktiviert",
     },
@@ -57,8 +58,7 @@ export const de_de_expert_settings_page = {
   feedback: {
     refresh_failed:
       "Experteneinstellungen können derzeit nicht aktualisiert werden. Bitte versuchen Sie es später erneut.",
-    update_failed:
-      "Fehler beim Speichern der Einstellung. Bitte versuchen Sie es später erneut.",
+    update_failed: "Fehler beim Speichern der Einstellung. Bitte versuchen Sie es später erneut.",
     preceding_lines_threshold_invalid:
       "Der Schwellenwert für vorhergehende Zeilen muss eine Zahl innerhalb des gültigen Bereichs sein.",
   },

@@ -54,20 +54,17 @@ export const de_de_model_page = {
   feedback: {
     refresh_failed:
       "Fehler beim Aktualisieren der Modellübersicht. Bitte versuchen Sie es später erneut",
-    add_failed:
-      "Fehler beim Hinzufügen des Modells. Bitte versuchen Sie es später erneut",
+    add_failed: "Fehler beim Hinzufügen des Modells. Bitte versuchen Sie es später erneut",
     update_failed:
       "Fehler beim Speichern der Modellkonfiguration. Bitte versuchen Sie es später erneut",
     reorder_failed:
       "Fehler beim Speichern der Modellreihenfolge. Bitte versuchen Sie es später erneut",
     delete_last_one: "In jeder Kategorie muss mindestens ein Modell verbleiben",
     reset_success: "Modell erfolgreich zurückgesetzt",
-    json_format_error:
-      "JSON-Formatfehler. Bitte geben Sie ein gültiges JSON-Objekt ein",
+    json_format_error: "JSON-Formatfehler. Bitte geben Sie ein gültiges JSON-Objekt ein",
     selector_load_failed:
       "Fehler beim Laden der Modellliste. Bitte überprüfen Sie die API-Konfiguration",
-    test_failed:
-      "Fehler beim Testen des Modells. Bitte versuchen Sie es später erneut",
+    test_failed: "Fehler beim Testen des Modells. Bitte versuchen Sie es später erneut",
   },
   fields: {
     name: {
@@ -78,8 +75,7 @@ export const de_de_model_page = {
     },
     api_url: {
       title: "API-URL",
-      description:
-        "Geben Sie die API-URL ein und prüfen Sie, ob /v1 am Ende enthalten sein soll",
+      description: "Geben Sie die API-URL ein und prüfen Sie, ob /v1 am Ende enthalten sein soll",
       placeholder: "Bitte API-URL eingeben …",
     },
     api_key: {

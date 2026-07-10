@@ -51,13 +51,6 @@ function interpolate_message(template: string, params: Record<string, string>): 
   }, template);
 }
 
-export function resolve_i18n_locale(app_language: unknown): Locale {
-  const upper = String(app_language).trim().toUpperCase();
-  if (upper === "EN") return "en-US";
-  if (upper === "DE") return "de-DE";
-  return "zh-CN";
-}
-
 export const MESSAGE_MAP_BY_LOCALE: Readonly<Record<Locale, ReadonlyMap<LocaleKey, string>>> = {
   "zh-CN": build_message_map(zh_cn_messages),
   "en-US": build_message_map(en_us_messages),
@@ -76,4 +69,4 @@ export function create_text_resolver(locale: Locale): TextResolver {
   return (key, params) => format_i18n_message(locale, key, params);
 }
 
-export type { Locale, LocaleMessageSchema } from "./types";
+export { LOCALES, type Locale, type LocaleMessageSchema } from "./types";

@@ -14,7 +14,8 @@ export const de_de_basic_settings_page = {
     },
     project_save_mode: {
       title: "Projekt-Speicherort",
-      description: "Legt den Speicherort für Projektdateien beim Erstellen eines neuen Projekts fest",
+      description:
+        "Legt den Speicherort für Projektdateien beim Erstellen eines neuen Projekts fest",
       description_fixed:
         "Legt den Speicherort für Projektdateien beim Erstellen eines neuen Projekts fest" +
         "\n" +
@@ -41,8 +42,7 @@ export const de_de_basic_settings_page = {
   feedback: {
     refresh_failed:
       "Grundeinstellungen können derzeit nicht aktualisiert werden. Bitte versuchen Sie es später erneut.",
-    update_failed:
-      "Fehler beim Speichern der Einstellung. Bitte versuchen Sie es später erneut.",
+    update_failed: "Fehler beim Speichern der Einstellung. Bitte versuchen Sie es später erneut.",
     request_timeout_invalid:
       "Das Anfrage-Timeout muss eine Zahl innerhalb des gültigen Bereichs sein.",
     pick_directory_failed:
